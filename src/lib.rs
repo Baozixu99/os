@@ -26,15 +26,15 @@ extern crate alloc;
 extern crate bitflags;
 
 #[macro_use]
-mod console;
-mod arch;
-mod drivers;
-mod fs;
-mod lang_items;
-mod mm;
-mod syscall;
-mod task;
-mod timer;
+pub mod console;
+pub mod arch;
+pub mod drivers;
+pub mod fs;
+pub mod lang_items;
+pub mod mm;
+pub mod syscall;
+pub mod task;
+pub mod timer;
 
 use crate::arch::{bootstrap_init, machine_init};
 // #[cfg(feature = "board_2k1000")]
